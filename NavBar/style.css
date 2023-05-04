@@ -1,5 +1,7 @@
 body {
     background-color: darkgray;
+    margin: 0;
+    padding: 140px;
 }
 
 header {
@@ -9,6 +11,26 @@ header {
     width: 80%;
     max-height: 80px;
     margin: 30px auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.background-image {
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1683088021841-465c694ad199?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1463&q=80);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .logo {
