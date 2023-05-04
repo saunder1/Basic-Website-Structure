@@ -1,0 +1,70 @@
+body {
+    background-color: darkgray;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    max-height: 80px;
+    margin: 30px auto;
+}
+
+.logo {
+    flex: 0.4;
+}
+
+#logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin-left: 0;
+}
+
+nav {
+    flex: 0.6;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    margin: 0 0.4rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 1.5em 0;
+}
+
+nav ul li a, nav ul li a::after, nav ul li a::before {
+    transition: all .5s;
+}
+
+nav ul li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: black;
+    height: 3px;
+}
+
+nav ul li a:hover::after {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
