@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    gap: 200px;
+    padding: 30px;
+    align-items: center;
+}
+
+.nav-branding {
+    font-size: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.socials img {
+    width: 20px;
+    height: 20px;
+}
+
+.home {
+    width: 100%;
+}
+
+.home-img {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    /* change z-index appropriately to show behind nav */
+    z-index: 1;
+    background-image: url(images/globe.jpg);
+    background-repeat: no-repeat;
+}
